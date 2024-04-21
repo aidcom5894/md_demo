@@ -17,6 +17,11 @@ class LoadAction_Controller extends CI_Controller
 	{
 		$this->load->view('developerLogin');
 	}
+
+	public function loadTerminal()
+	{
+		$this->load->view('terminal_execution/terminal_portal');
+	}
 }
 
 ?>

@@ -103,7 +103,7 @@ localhost@localhost.localhost
 <div id="site-footer">
 <div class="chunk">
 Powered by <a href="<?php echo base_url(); ?>">Django Malware Detector</a>
-<br />Developed with &hearts; By <a href="https://akriti.online/">Shivani</a>
+<br />Developed with &hearts; By <a href="https://akriti.online/">Akriti</a>
 </div>
 </div>
 
