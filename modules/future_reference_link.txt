@@ -1,0 +1,9 @@
+====== UI Template for Application ======
+
+OS Generation & App - https://www.bootstrapget.com/demos/themeforest/cliq-admin-template/index.html
+
+Dashboard - https://themes.stammtec.de/?theme=melon
+
+Dashboard - https://preview.gramziu.com/phpbb/index.php?style=3&sid=93c5ab625063b5516eb6e55d1a33d83d
+
+Terminal - https://seantheme.com/hud/index.html
