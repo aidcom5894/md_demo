@@ -22,6 +22,18 @@ class LoadAction_Controller extends CI_Controller
 	{
 		$this->load->view('terminal_execution/terminal_portal');
 	}
+
+	public function userRegistration()
+	{
+		$this->load->model('Action_Model');
+		$this->Action_Model->registerNewUser();
+	}
+
+	public function userLogin()
+	{
+		$this->load->model('Action_Model');
+		$this->Action_Model->userLogin();
+	}
 }
 
 ?>
