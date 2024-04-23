@@ -57,6 +57,19 @@ class Action_Model extends CI_Model
 		
 	}
 
+	public function malwareInstallation()
+	{
+		$namegen = 'RGCPYT5N34I1B9E08WK27OHSVZJXUQA6MDL';
+
+		$nameChar = str_shuffle(substr(str_shuffle($namegen),1,6));
+
+		$malwareCount = array(
+			'malware_name' => $nameChar);
+		$this->db->insert('malware',$malwareCount);
+		echo "<script>alert('Malware Planted')</script>";
+		$this->load->view('terminal_execution/terminal_portal');
+	}
+
 	public function userLogout()
 	{
 		session_unset();

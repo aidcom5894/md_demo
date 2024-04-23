@@ -63,3 +63,7 @@ $route['initiate_user_registration'] = 'LoadAction_Controller/userRegistration';
 $route['user_login'] = 'LoadAction_Controller/userLogin';
 
 $route['user_logout'] = 'LoadAction_Controller/userLogout';
+
+$route['system_initialisation'] = 'LoadAction_Controller/systemCreation';
+
+$route['inject_malware'] = 'LoadAction_Controller/plantMalware';
