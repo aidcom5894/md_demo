@@ -20,6 +20,15 @@
 </a>
 </div>
 
+<div class="menu-item">
+<a href="<?php echo base_url('system_initialisation'); ?>" class="menu-link">
+<span class="menu-icon"><i class="bi bi-bar-chart"></i></span>
+<span class="menu-text">View System</span>
+</a>
+</div>
+
+
+
 
 <div class="menu-item has-sub">
 <a href="#" class="menu-link">
@@ -31,7 +40,7 @@
 </a>
 <div class="menu-submenu">
 <div class="menu-item">
-<a href="#" class="menu-link">
+<a href="<?php echo base_url('inject_malware'); ?>" class="menu-link">
 <span class="menu-text">Plant Malware</span>
 </a>
 </div>

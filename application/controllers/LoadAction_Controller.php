@@ -41,6 +41,17 @@ class LoadAction_Controller extends CI_Controller
 		$this->load->model('Action_Model');
 		$this->Action_Model->userLogout();
 	}
+
+	public function systemCreation()
+	{
+		$this->load->view('systemCreation/systempage');
+	}
+
+	public function plantMalware()
+	{
+		$this->load->model('Action_Model');
+		$this->Action_Model->malwareInstallation();
+	}
 }
 
 ?>
