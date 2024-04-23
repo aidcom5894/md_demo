@@ -51,10 +51,21 @@ class Action_Model extends CI_Model
 			else
 			{
 				echo "<script>alert('Entry Not Found')</script>";
+				echo "<script>window.location.href='".base_url()."'</script>";
 			}
 		}
 		
 	}
+
+	public function userLogout()
+	{
+		session_unset();
+		unset($_SESSION['loggedinUser']);
+		session_destroy();
+		redirect(base_url());
+	}
+
+
 }
 
 ?>

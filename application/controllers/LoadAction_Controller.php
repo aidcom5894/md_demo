@@ -34,6 +34,13 @@ class LoadAction_Controller extends CI_Controller
 		$this->load->model('Action_Model');
 		$this->Action_Model->userLogin();
 	}
+
+
+	public function userLogout()
+	{
+		$this->load->model('Action_Model');
+		$this->Action_Model->userLogout();
+	}
 }
 
 ?>
