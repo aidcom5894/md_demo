@@ -57,3 +57,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['developer_login'] = 'LoadAction_Controller/loadLogin';
 
 $route['django_terminal'] = 'LoadAction_Controller/loadTerminal';
+
+$route['initiate_user_registration'] = 'LoadAction_Controller/userRegistration';
+
+$route['user_login'] = 'LoadAction_Controller/userLogin';

@@ -1,4 +1,14 @@
+<?php 
 
+$userEntry = $this->db->query("SELECT * FROM user_directory WHERE username='{$_SESSION['loggedinUser']}'");
+foreach ($userEntry->result() as $row)
+{
+	$actvUserName = $row->username;
+	$useravatar = $row->user_profile;
+}
+
+
+?>
 <div id="app" class="app">
 
 <div id="header" class="app-header">
@@ -24,9 +34,9 @@
 <div class="brand">
 <a href="index.html" class="brand-logo">
 <span class="brand-img">
-<span class="brand-img-text text-theme">H</span>
+<span class="brand-img-text text-theme">A</span>
 </span>
-<span class="brand-text">HUD ADMIN</span>
+<span class="brand-text">MALWARE DETECTOR</span>
 </a>
 </div>
 
@@ -167,17 +177,17 @@
 <div class="menu-item dropdown dropdown-mobile-full">
 <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
 <div class="menu-img online">
-<img src="<?php echo base_url(); ?>modules/terminal_exe/assets/img/user/profile.jpg" alt="Profile" height="60">
+<img src="<?php echo $useravatar; ?>" alt="Profile" height="60">
 </div>
-<div class="menu-text d-sm-block d-none w-170px"><span class="__cf_email__" data-cfemail="0d787e687f636c60684d6c6e6e62786379236e6260">[email&#160;protected]</span></div>
+<div class="menu-text d-sm-block d-none w-170px"><?php echo $actvUserName; ?></div>
 </a>
 <div class="dropdown-menu dropdown-menu-end me-lg-3 fs-11px mt-1">
-<a class="dropdown-item d-flex align-items-center" href="profile.html">PROFILE <i class="bi bi-person-circle ms-auto text-theme fs-16px my-n1"></i></a>
-<a class="dropdown-item d-flex align-items-center" href="email_inbox.html">INBOX <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i></a>
-<a class="dropdown-item d-flex align-items-center" href="calendar.html">CALENDAR <i class="bi bi-calendar ms-auto text-theme fs-16px my-n1"></i></a>
-<a class="dropdown-item d-flex align-items-center" href="settings.html">SETTINGS <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i></a>
+<a class="dropdown-item d-flex align-items-center" href="#">PROFILE <i class="bi bi-person-circle ms-auto text-theme fs-16px my-n1"></i></a>
+<a class="dropdown-item d-flex align-items-center" href="#">INBOX <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i></a>
+<a class="dropdown-item d-flex align-items-center" href="#">CALENDAR <i class="bi bi-calendar ms-auto text-theme fs-16px my-n1"></i></a>
+<a class="dropdown-item d-flex align-items-center" href="#">SETTINGS <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i></a>
 <div class="dropdown-divider"></div>
-<a class="dropdown-item d-flex align-items-center" href="page_login.html">LOGOUT <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i></a>
+<a class="dropdown-item d-flex align-items-center" href="#">LOGOUT <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i></a>
 </div>
 </div>
 </div>

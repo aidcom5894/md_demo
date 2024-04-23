@@ -1,4 +1,16 @@
 
+<?php 
+
+if(!isset($_SESSION['loggedinUser']))
+{
+	session_unset();
+	unset($_SESSION['loggedinUser']);
+	session_destroy();
+	redirect(base_url());
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
 <head>

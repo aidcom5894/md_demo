@@ -9,23 +9,32 @@ $this->load->view('master_page/ui_header');
 
 <div id="sidebar">
 <div class="side-block side-login">
-<form method="post" action="#">
+
+
+<form method="POST" action="<?php echo base_url('user_login'); ?>">
 <h4 class="side-block-head"><a href="#">Login</a></h4>
 <div class="side-block-body">
 
 <fieldset>
-<input type="text" tabindex="1" name="username" id="username" size="10" class="inputbox" title="Username" placeholder="Username" /><input type="password" tabindex="2" name="password" id="password" size="10" class="inputbox" title="Password" autocomplete="off" placeholder="Password" />
+
+<input type="text" tabindex="1" name="portalusername" id="username" size="10" class="inputbox" title="Username" placeholder="Username" />
+
+<input type="password" tabindex="2" name="portalpassword" id="password" size="10" class="inputbox" title="Password" autocomplete="off" placeholder="Password" />
 <br />
+
 <label for="autologin" id="remember-me"><input type="checkbox" tabindex="4" name="autologin" id="autologin"/>Remember me</label>
+
 <br />
 <input type="submit" tabindex="5" name="login" value="Login" class="button1" />	
-<input type="hidden" name="redirect" value="#" />
-<input type="hidden" name="creation_time" value="1713677054" />
-<input type="hidden" name="form_token" value="13bf9c750f9990a06160e580aadca7bbfcd16992" />
+
+
 </fieldset>
 
 </div>
 </form>
+
+
+
 </div>
 
 </div>
