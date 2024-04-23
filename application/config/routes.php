@@ -61,3 +61,5 @@ $route['django_terminal'] = 'LoadAction_Controller/loadTerminal';
 $route['initiate_user_registration'] = 'LoadAction_Controller/userRegistration';
 
 $route['user_login'] = 'LoadAction_Controller/userLogin';
+
+$route['user_logout'] = 'LoadAction_Controller/userLogout';

@@ -23,5 +23,7 @@ if(!isset($_SESSION['loggedinUser']))
 <link href="<?php echo base_url(); ?>modules/terminal_exe/assets/css/vendor.min.css" rel="stylesheet">
 <link href="<?php echo base_url(); ?>modules/terminal_exe/assets/css/app.min.css" rel="stylesheet">
 
+<link href="<?php echo base_url(); ?>modules/terminal_exe/assets/plugins/jvectormap-next/jquery-jvectormap.css" rel="stylesheet">
+
 </head>
 <body>
